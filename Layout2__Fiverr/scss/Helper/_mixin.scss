@@ -1,0 +1,30 @@
+// Thêm style cho các thành phần text, button hiển thị trên trang web
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleButtonGreen($bg-color, $radius, $py, $px) {
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+    border-radius: $radius;
+    padding: $py $px;
+    transition: all .5s;
+}
+
+// Responsive
+// $screen: chứa tên màn hình
+@mixin responsive($screen) {
+    // lấy giá trị dựa trên kích thước màn hình
+    // kiểm tra giá trị tên màn hình có tồn tại hay không, và có tồn tại ở biến $breakpoints
+    @if(map-has-key($map: $breakpoints, $key: $screen)) {
+        // hợp lệ
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "Màn hình không hợp lệ";
+    }
+}

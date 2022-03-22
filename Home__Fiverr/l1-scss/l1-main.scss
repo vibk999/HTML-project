@@ -1,0 +1,20 @@
+//helper
+@import './helpers/variables';
+@import './helpers/mixing';
+//base
+@import './base/reset1';
+@import './base/customize1';
+//compoment
+@import './compoment/slick';
+@import './compoment/modalVideo';
+@import './compoment/button1';
+//layout
+@import './layouts/services';
+@import './layouts/freelanceTalent';
+@import './layouts/marketPlace';
+@import './layouts/fivverBusiness';
+@import './layouts/introduction';
+@import './layouts/inspired';
+@import './layouts/fivverGuide';
+@import './layouts/footer';
+@import './layouts/trusted';

@@ -1,0 +1,97 @@
+.fivverBusiness {
+    background-color: $color-blue-1;
+    padding: 64px 0;
+    margin-bottom: 80px;
+}
+
+.fivverBusiness__item {
+    padding-right: 5%;
+}
+
+.fivverBusiness__content {
+    color: $color-white-0;
+}
+
+.fivverBusiness__logo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.fivverBusiness__logo h3 {
+    color: $color-white-0;
+    font-weight: 500;
+}
+
+.fivverBusiness__logo span:first-child {
+    font-weight: 900;
+}
+
+.fivverBusiness__logo span:nth-child(2) {
+    text-transform: uppercase;
+    background: #584aff;
+    border-color: #584aff;
+    font-size: 11px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 999px;
+    padding: 3px 7px 2px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.fivverBusiness__text h1 {
+    color: $color-white-0;
+    padding-bottom: 24px;
+}
+
+.fivverBusiness__text h1 i {
+    font-weight: 500;
+}
+
+.fivverBusiness__text p {
+    font-size: 18px;
+}
+
+.fivverBusiness__text ul {
+    margin-bottom: 46px;
+}
+
+.fivverBusiness__text ul li {
+    list-style: none;
+    display: flex;
+    padding-bottom: 14px;
+    align-items: center;
+}
+
+.fivverBusiness__text ul li p {
+    margin: 0;
+}
+
+.fivverBusiness__text ul li i {
+    border: rgb(122, 125, 133) 2px solid;
+    border-radius: 50%;
+    line-height: 21px;
+    width: 25px;
+    text-align: center;
+    margin-right: 20px;
+    color: rgb(122, 125, 133);
+}
+
+.fivverBusiness__img img {
+    display: block;
+    width: 100%;
+}
+
+@include responsive('medium') {
+    .fivverBusiness {
+        padding: 48px 0;
+        margin-bottom: 48px;
+    }
+    .fivverBusiness__text ul {
+        margin-bottom: 36px;
+    }
+    .fivverBusiness__item {
+        padding-right: 8px;
+    }
+}

@@ -1,0 +1,34 @@
+.work {
+    background-color: $color-gray-4;
+    h1 {
+        @include styleText($color-black-2, $fs-4, $fw-bold-1);
+    }
+    .work__content {
+        padding: 0 140px;
+        h2 {
+            @include styleText($color-gray-5, $fs-3, $fw-bold-1);
+        }
+        p {
+            @include styleText($color-gray-6, $fs-2, $fw-normal);
+        }
+        .work__img {
+            position: relative;
+            height: 50px;
+            width: 50px;
+            margin: 10px auto ;
+            overflow: hidden;
+            img {
+                position: absolute;         
+            }
+            .img-left {
+                left: -200px;
+            }
+            .img-center {
+                left: -250px;
+            }
+            .img-right {
+                left: 0;
+            }
+        }
+    }
+}

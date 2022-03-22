@@ -1,0 +1,15 @@
+.btnGreen {
+    @include styleButttonGreen($color-green-1, 12px, 24px, 4px, $color-green-1);
+    @include styleText($color-white-0, $fs-0, $fw-bold-0);
+    &:hover {
+        @include styleButtonGreenHover($color-green-2, $color-white-0);
+    }
+}
+
+.btnWhite {
+    @include styleButtonWhite($color-white-0, 12px, 24px, $color-trans, 4px);
+    @include styleText($color-blue-2, $fs-0, $fw-bold-0);
+    &:hover {
+        @include styleButtonWhiteHover($color-white-1, $color-blue-2);
+    }
+}

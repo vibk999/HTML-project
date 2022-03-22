@@ -1,0 +1,58 @@
+.education__bg {
+    margin: 40px 140px;
+    background-color: $color-gray-4;
+    .education__desciption {
+        padding: 60px;
+        .education__text {
+            h1 {
+                @include styleText($color-black-1, $fs-4, $fw-bold-1);
+                padding: 10px 0;
+            }
+            p {
+                @include styleText($color-gray-1, $fs-2 ,$fw-normal);
+            }
+        }
+    }
+    .education__video {
+        position: relative;
+        padding: 0 50px;
+        .video__content {
+            position: absolute;
+            width: 51%;
+            top: 60%;
+            .video__text {
+                display: flex;
+                padding: 0;
+                h4 {
+                    @include styleText($color-white-0, $fs-2, $fw-bold-1);
+                }
+                .text__green {
+                    @include styleText($color-white-0, $fs-1, $fw-bold-1);
+                    background-color: $color-green-2;
+                    padding: 0 10px;
+                    align-self: center;
+                }
+            }
+            .video__rating {
+                display: flex;
+                height: 20px;
+                overflow: hidden;
+                .point {
+                    padding-left: 5px;
+                    @include styleText($color-yellow-1, $fs-1, $fw-bold-1);
+                }
+                .review {
+                    @include styleText($color-white-0, $fs-1, $fw-normal);
+                }
+            }
+        }
+        .video__play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            a i {
+                top: 50%;
+            }
+        }
+    }
+}

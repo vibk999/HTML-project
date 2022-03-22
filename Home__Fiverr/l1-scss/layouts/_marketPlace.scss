@@ -1,0 +1,62 @@
+.marketPlace h2 {
+    margin-bottom: 40px;
+    padding-bottom: 24px
+}
+
+.marketPlace__content {
+    margin-bottom: 80px;
+}
+
+.marketPlace__item img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 15px;
+}
+
+.marketPlace__item a p {
+    color: #222325;
+    text-align: center;
+    position: relative;
+}
+
+.marketPlace__item a p:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 38%;
+    padding: 0 0 8px;
+    width: 50px;
+    border-top: 2px solid #c5c6c9;
+}
+
+.marketPlace__item a:hover p::after {
+    transition: all .5s ease-in-out;
+    border-color: $color-green-1;
+    width: 70px;
+    transform: translateX(-18%);
+}
+
+@include responsive('extra-large') {
+    .marketPlace__item a p:after {
+        left: 35%;
+    }
+}
+
+@include responsive('large') {
+    .marketPlace__item a p:after {
+        left: 41%;
+    }
+}
+
+@include responsive('small') {
+    .marketPlace__content {
+        margin-bottom: 48px;
+    }
+    .marketPlace h2 {
+        padding-bottom: 20px;
+    }
+    .marketPlace__item a p:after {
+        left: 35%;
+    }
+}

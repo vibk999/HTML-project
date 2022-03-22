@@ -1,0 +1,37 @@
+.trusted {
+    padding: 20px 0;
+    background-color: #fafafa;
+    margin-top: 47.5%;
+    ul { 
+        margin: 0 20%;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        li {
+            list-style: none;
+            img {
+                height: 60px;
+            }
+        }
+    }
+}
+/* responsive */
+@media (max-width: 800px) {
+    .trusted {
+        margin-top:53.5%;
+        ul { 
+        margin: 0 10%;
+        }
+       
+        
+    }
+}
+@media (max-width: 670px) {
+    .trusted {
+      
+        margin-top: 73.5%;
+        ul {
+            margin: 0 5%;
+        }
+    }
+}

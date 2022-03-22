@@ -1,0 +1,93 @@
+.inspired {
+    background-color: $color-gray-2;
+    margin-bottom: 80px;
+    padding: 64px 0;
+    position: relative;
+}
+
+.inspired h1 {
+    padding-right: 180px;
+    line-height: 120%;
+    padding-bottom: 24px;
+    font-size: 43px;
+}
+
+.inspired .moreLink {
+    position: absolute;
+    top: 90px;
+    right: 32px;
+    padding-top: 17px;
+}
+
+.inspired .moreLink span {
+    padding-left: 8px;
+}
+
+.inspired__card {
+    padding-bottom: 8px;
+}
+
+.inspired__cardShadow {
+    background-color: $color-white-0;
+    box-shadow: 0 0.14px 2.29266px rgba(0, 0, 0, 0.03), 0 0.37px 4.42626px rgba(0, 0, 0, 0.05), 0 3px 7px rgba(0, 0, 0, 0.09);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.inspired__card img {
+    width: 100%;
+    height: 237px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.inspired__card img:hover {
+    opacity: .85;
+}
+
+.inspired__item {
+    display: flex;
+    padding: 16px 0 12px 16px;
+}
+
+.inspired__item img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    transition: none;
+}
+
+.inspired__item img:hover {
+    opacity: 1;
+}
+
+.inspired__text b {
+    color: $color-black-1;
+}
+
+.inspired__text p {
+    color: #95979d;
+}
+
+@include responsive('large') {
+    .inspired h1 {
+        font-size: $fs-4;
+    }
+}
+
+@include responsive('medium') {
+    .inspired {
+        margin-bottom: 48px;
+    }
+    .inspired .moreLink {
+        position: initial;
+    }
+    .inspired h1 {
+        padding-right: 0;
+    }
+    .inspired {
+        padding: 48px 0;
+    }
+}

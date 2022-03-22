@@ -1,0 +1,147 @@
+.joinOur {
+    .joinour__cover {
+        padding: 40px 140px;
+    .joinour__title {
+        h2 {
+            text-align: center;
+            text-transform: capitalize;
+            padding-bottom: 30px;
+            color: #222325;
+        }
+    }
+    .joinour__content {
+        ul {
+            grid-gap: 25px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            &:hover {
+                .joinour__item:after {
+                    opacity: .7;
+                }
+            }
+            li:last-child:after {
+                content: none;
+            }
+            
+            li {
+                position: relative;
+                cursor: pointer;
+                height: 305px;
+                width: 271px;
+                overflow: hidden;
+                list-style: none;
+              
+               
+              
+                .joinour__item { 
+                    transition: all .5s;
+                    height: 305px;
+                    background-repeat: no-repeat;
+                    &:after {
+                        width: 100%;
+                        position: absolute;
+                        top:0;
+                        content:'';
+                        z-index: 3;
+                        transition: all .5s;
+                        background: black;
+                        height: 100%;
+                        opacity: 0;
+                    }
+                    &:hover:after {
+                        opacity: 0 !important;
+                    }
+            }
+            h6 {
+                z-index: 2;
+                bottom: 0%;
+                left: 5%;
+                font-size: 24px;
+                line-height: 25px;
+                font-weight: 700;
+                color: #fff;
+                position: absolute;
+            }
+        }
+            li:first-child {
+                .joinour__item { 
+                    background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/be9e63fa588288b35991ed8e8c6550d9-1614861018529/designer.jpg);
+                    &:hover {
+                        transform: scale(1.1);
+                   }
+                }
+            }
+            li:nth-child(2) {
+                .joinour__item { 
+                background-size: cover;
+                background-position: 50% 50%;
+                background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/699482a05db770305ba6f2fc7139b98a-1614861401148/developer.jpg);
+                &:hover{
+                    background-position: 35% 50%;
+                }
+            }
+            }
+            li:nth-child(3) {
+                .joinour__item { 
+                background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/cfe8db680cc2a8abc1b1e9b755011a4f-1614863917639/writer.jpg);
+                background-size: cover;
+                background-position: 50% 50%;
+                &:hover {
+                    background-position: 45% 50%;
+               }
+            }
+            }
+            li:nth-child(4) {
+                .joinour__item { 
+                background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/be9e63fa588288b35991ed8e8c6550d9-1614861018521/video.jpg);
+                &:hover {
+                    transform: scale(1.1);
+               }
+            }
+            }
+            li:nth-child(5) {
+                .joinour__item { 
+                background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/be9e63fa588288b35991ed8e8c6550d9-1614861018522/musician.jpg);
+                &:hover {
+                    transform: scale(1.1);
+               }
+            }
+            }
+            li:nth-child(6) {
+                .joinour__item { 
+                background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/be9e63fa588288b35991ed8e8c6550d9-1614861018521/voiceover.jpg);
+                &:hover {
+                    transform: scale(1.1);
+               }
+            }
+            }
+            li:nth-child(7) {
+                .joinour__item { 
+                background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/699482a05db770305ba6f2fc7139b98a-1614861401146/analyst.jpg);
+                background-size: cover;
+                background-position: 50% 50%;
+                &:hover{
+                    background-position: 40% 50%;
+                }
+            }
+            }
+            li:last-child {
+                background:#eee;
+                padding-top:75px;
+                text-align: center;
+                i {
+                    color:#ff5d5d;
+                    font-size: 30px;
+                }
+                h3 {
+                    font-size: 32px;
+                    line-height: 34px;
+                    font-weight: 400;
+                    color: #555;
+                }
+            }
+           
+        }
+    }
+    }
+}

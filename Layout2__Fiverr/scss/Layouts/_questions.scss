@@ -1,0 +1,38 @@
+.questions__bg {
+    padding: 40px 140px;
+    background-color: $color-gray-4;
+    h1 {
+        @include styleText($color-black-1, $fs-4, $fw-bold-1);
+        padding: 10px 0;
+    }
+    .questions__content {
+        margin-top: 20px;
+        .questions__column {
+            padding-left: 0;
+            .card {
+                background-color: $color-white-0;
+                border: 5px solid $color-white-0;
+                margin-top: 10px;
+                .card-header {
+                    padding: 5px;
+                    background-color: $color-white-0;
+                    border: 5px solid $color-white-0;
+                    button {
+                        @include styleText($color-black-2, $fs-1, $fw-bold);
+                        text-decoration: none;
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+                .card-body {
+                    @include styleText($color-black-1, $fs-1, $fw-normal);
+                    padding: 20px 0 20px 20px;
+                    border: 5px solid $color-white-0;
+                }
+                &:hover {
+                    border-left: 5px solid $color-green-1;
+                }
+            }
+        }
+    }
+}

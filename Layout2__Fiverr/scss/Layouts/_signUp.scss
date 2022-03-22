@@ -1,0 +1,8 @@
+.signUp {
+    padding: 50px 0;
+    h4 {
+        @include styleText($color-gray-5, $fs-2 ,$fw-normal);
+        margin-bottom: 20px;
+    }
+    border-bottom: 2px solid $color-gray-4;
+}

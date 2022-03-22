@@ -1,0 +1,169 @@
+.introduction__content {
+    margin-bottom: 80px;
+}
+
+.introduction__card {
+    align-items: center;
+}
+
+.introduction__video {
+    cursor: pointer;
+    position: relative;
+}
+
+.introduction__video img {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.introduction__text {
+    padding-right: 38px;
+}
+
+.introduction__text h5 {
+    font-weight: $fw-normal;
+    color: $color-gray-1;
+    padding-bottom: 16px;
+}
+
+.introduction__text h5 span {
+    border-left: 1px solid #c5c6c9;
+    margin-left: 16px;
+}
+
+.introduction__text h5 span img {
+    height: 36px;
+    margin-left: 12px;
+}
+
+.introduction__text i {
+    font-size: $fs-4;
+    line-height: 36px;
+    color: $color-green-3;
+    font-weight: 500;
+}
+
+.introduction__video::after {
+    content: "";
+    display: inline-block;
+    background: url(./../../l1-images/desktop-play-button.c1196d6.png) no-repeat;
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logoMaker {
+    background-color: $color-blue-2;
+    color: $color-white-0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.logoMaker__logo {
+    padding-bottom: 16px;
+}
+
+.logoMaker__logo h3 {
+    color: $color-white-0;
+    font-weight: 500;
+}
+
+.logoMaker__logo span:first-child {
+    font-weight: 900;
+}
+
+.logoMaker__logo span:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: $fw-bold-1;
+    line-height: 100%;
+    padding: 3px 7px 2px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.logoMaker__text {
+    padding: 36px 0 36px 32px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.logoMaker__text h2 {
+    color: $color-white-0;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+
+.logoMaker__text h2 i {
+    font-weight: $fw-normal;
+}
+
+.logoMaker__img1 {
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5%;
+    right: 0;
+}
+
+.logoMaker__img2 {
+    margin-top: -30%;
+}
+
+.logoMaker__img3 {
+    margin-top: -48%;
+}
+
+.logoMaker__img1 img,
+.logoMaker__img2 img,
+.logoMaker__img3 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@include responsive('extra-large') {
+    .introduction__text h5 span,
+    .introduction__text h5 span img {
+        border: none;
+        margin: 0;
+    }
+    .introduction__text i {
+        font-size: 24px;
+    }
+    .logoMaker__img1 {
+        left: -10%;
+        right: -10%;
+    }
+}
+
+@include responsive('large') {
+    .logoMaker {
+        flex-direction: column;
+    }
+}
+
+@include responsive('medium') {
+    .introduction__content {
+        margin-bottom: 48px;
+    }
+    .introduction__text {
+        padding-top: 24px;
+        padding-right: 15px;
+    }
+    .logoMaker__text {
+        padding: 48px 24px;
+    }
+}

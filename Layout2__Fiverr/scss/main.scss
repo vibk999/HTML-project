@@ -1,0 +1,36 @@
+
+
+// Chỉ chứa đường dẫn tới các file trong thư mục scss
+// Không chứa code style css
+// Header
+@import './Layouts/header';
+// Helper
+@import './Helper/variables';
+@import './Helper/mixin';
+
+//Vendor
+
+//Base
+@import './Base/reset';
+@import './Base/customize';
+@import './Base/normalize';
+
+//Components
+@import './Components/button';
+@import './Components/link';
+@import './Components/modalContent';
+
+//Layouts
+@import './Layouts/work';
+@import './Layouts/education';
+@import './Layouts/feedback';
+@import './Layouts/questions';
+@import './Layouts/signUp';
+@import './Layouts/footer';
+@import './Layouts/videoBackground';
+@import './Layouts/joinOur';
+// Button 
+@import './Button/join';
+//Pages
+
+//Theme

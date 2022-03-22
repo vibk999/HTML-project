@@ -1,0 +1,46 @@
+//thêm type các thành phần text
+@mixin styleText($color, $fs, $fw) {
+    color: $color !important;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleButtonWhite($bg-color, $pd-y, $pd-x, $border-color, $radius) {
+    background-color: $bg-color;
+    padding: $pd-y $pd-x;
+    border: 1px solid $border-color;
+    border-radius: $radius;
+    transition: all .5s;
+}
+
+@mixin styleButtonWhiteHover($bg-color, $color) {
+    background-color: $bg-color;
+    border-color: $bg-color;
+    color: $color;
+}
+
+@mixin styleButttonGreen($bg-color, $pd-y, $pd-x, $radius, $border-color) {
+    background-color: $bg-color;
+    padding: $pd-y $pd-x;
+    border-radius: $radius;
+    border: 1px solid $border-color;
+    transition: all .5s;
+}
+
+@mixin styleButtonGreenHover($bg-color, $color) {
+    background-color: $bg-color;
+    border-color: $bg-color;
+    color: $color;
+}
+
+@mixin responsive($screen) {
+    @if(map-has-key($map: $breakpoints, $key: $screen)) {
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and(max-width: $value) {
+            @content;
+        }
+    }
+    @else {
+        @warn "màn hình không hợp lệ";
+    }
+}

@@ -1,0 +1,51 @@
+.slick-prev,
+.slick-next {
+    border-radius: 30px;
+    font-size: 16px;
+    width: 48px!important;
+    height: 48px!important;
+    z-index: 4;
+    background-color: $color-white-0!important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.151);
+}
+
+.slick-prev {
+    left: -15px!important;
+}
+
+.slick-next {
+    right: -15px!important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: ""!important;
+    display: inline-block;
+    background: url(./../../l1-images/arrows.a8b0bad.svg) no-repeat;
+    background-size: 16px 64px;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+}
+
+.slick-next:before {
+    background-position: 0 -48px;
+}
+
+.slick-prev:before {
+    background-position: 0 -32px;
+}
+
+.slick-slide {
+    padding: 0 18px;
+}
+
+@include responsive('medium') {
+    .introduction__content .slick-next,
+    .introduction__content .slick-prev {
+        top: 25%;
+    }
+    .slick-slide {
+        padding: 0 9px;
+    }
+}

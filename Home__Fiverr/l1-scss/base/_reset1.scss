@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    @include styleText($color-black-0, $fs-0, $fw-normal);
+}
+
+body a,
+body a:hover {
+    text-decoration: none;
+}
